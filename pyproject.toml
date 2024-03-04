@@ -18,6 +18,8 @@ ignore_missing_imports = true
 [tool.cibuildwheel]
 before-build = "python -m pip install --upgrade pip wheel setuptools setuptools_scm"
 build-verbosity = 1
+
+[[tool.cibuildwheel.overrides]]
 select = "cp3{11,12}-*"
 
 [tool.cibuildwheel.linux]
