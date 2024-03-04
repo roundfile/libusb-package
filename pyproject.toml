@@ -27,4 +27,5 @@ archs = ["x86_64", "arm64"]
 before-build = "brew install autoconf automake libtool m4"
 
 [tool.cibuildwheel.windows]
-archs = ["auto"]
+archs = ["AMD64"]
+selrct = "cp3{11,12}-*"
